@@ -111,9 +111,9 @@ if (ketvirtas===0){
 
 console.log(pirmas,antras,trečias,ketvirtas);
 
-console.log("Nuliai = " +(nuliai));
-console.log("vienetai = " +(vienetai));
-console.log("dvejetai = " +(dvejetai));
+console.log("Nuliai: " +(nuliai));
+console.log("vienetai: " +(vienetai));
+console.log("dvejetai: " +(dvejetai));
 
 
 
