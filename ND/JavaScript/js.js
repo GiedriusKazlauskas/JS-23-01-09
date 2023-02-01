@@ -6,9 +6,16 @@ Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavard�
 
 
 var Name= "Travis";
-var lName= " Fimmel";
-const full=Name+lName;
-console.log(full);
+var lName= "Fimmel";
+
+if(Name.length > lName.length){
+    console.log("Trumpesnė eilutė ",lName)
+}
+else if(lName.length > Name.length){
+    console.log("trumpesnė eilutė ",Name)
+}else if(Name.length==lName.length){
+    console.log("Abiejų eilučių ilgis vienodas")
+}
 
 /* antra užduotis.
 
