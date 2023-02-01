@@ -41,9 +41,9 @@ Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavard�
 
 var n="Jackie";
 var p="Chan";
-var np="kiehan";
 
-console.log(np);
+nn=n[n.length-1]+n[n.length-2]+n[n.length-3]+p[p.length-1]+p[p.length-2]+p[p.length-3];
+console.log(nn);
 
 /* Ketvirta užduotis.
 
@@ -52,7 +52,7 @@ Sukurti kintamąjį su stringu: “Once upon a time in hollywood”.
 
 
 var stringas="Once upon a time in hollywood";
-var pakeisti=stringas.replace("Once upon a time in hollywood","*nce up*n a time in h*llyw**d");
+var pakeisti=stringas.replaceAll("O","*").replaceAll("o","*");
 console.log(pakeisti);
 
 /* Penkta užduotis.
