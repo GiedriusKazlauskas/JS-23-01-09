@@ -1,4 +1,7 @@
 
+
+
+                            //2023-01-31
 /* pirma užduotis.
 
 Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis).
@@ -115,9 +118,6 @@ console.log("Nuliai: " +(nuliai));
 console.log("vienetai: " +(vienetai));
 console.log("dvejetai: " +(dvejetai));
 
-
-
-
-
+                           
 
 
