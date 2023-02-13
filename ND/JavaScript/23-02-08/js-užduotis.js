@@ -16,7 +16,7 @@ document.write(`<h3 style="color: red;">Variantas a:</h3> "Įkalkite" 5 vinis ma
 
 
 
-
+// kodėl pakimba naršyklė jeigu į while ciklą įkeliami papildomi kintamieji ? 
 let vinis = 85;
 let smugiai = 0;
 
