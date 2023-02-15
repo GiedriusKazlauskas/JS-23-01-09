@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1140px;
+    margin: 20px auto;
+    background-color: black;
+}
+
+
+.con-part-1-photo img{
+    width: 1000px;
+}
