@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="žkstyle.css">
-    <script src="Žaidimųkonsolė.js"></script>
+    <link rel="stylesheet" href="/žkstyle.css">
+    <script src="/Žaidimųkonsolė.js"></script>
     <title>Žaidimų konsolė</title>
 </head>
 <body>
@@ -13,10 +13,34 @@
 <div class="con-part-1">
     <div class="con-part-1-photo"> 
         <img src="/img/tv.png" alt="tv-photo">
+        <div class="screen">
+            <div class="ekranas" id="tv-screen"></div>
+        </div>
     </div>
     <div class="con-part-1-photo2">
-        <img src="/img/joystick.jpeg" alt="joystick-photo">
+        <img src="/img/joystick.jpeg" alt="joystick-photo" usemap="#joycontrol">
+        <map name="joycontrol">
+            <area shape="circle" coords="148,24,14" alt="button-white-x"  title="On/Off" onclick="OnOff()" value="On">
+            <area shape="circle" coords="225,33,11" alt="button-y-yellow" title="Tv program" onclick="iframe()">
+            <area shape="circle" coords="245,55,11" alt="button-B-red" title="Return" onclick="back()">
+            <area shape="circle" coords="200,50,11" alt="button-X-blue" title="Game store" onclick="d()">
+            <area shape="circle" coords="225,76,11" alt="button-A-green" title="google" onclick="web()">
+            
+           
+        </map>
     </div>
+</div>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Pavadinimas</th>
+                <th>Kaina</th>
+            </tr>
+        </thead>
+    </table>
+<tbody id="lentele"></tbody>
 </div>
     </div>
 </body>
