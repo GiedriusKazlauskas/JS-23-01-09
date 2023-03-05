@@ -1,0 +1,40 @@
+body {
+    background-image: url('/penktadienioq/kokteilis/img/bekas.jpg');
+  
+    
+}
+
+img {
+    border-radius: 20px;
+    width: 30em;
+    height: auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container .result{
+    margin-left: 250px;
+}
+
+.button {
+    text-align: center;
+    
+}
+
+.round{
+    border-radius: 30px;
+    background-color: rgba(255, 254, 249, 0.833);
+}
+
+
+.ingred-ital{
+    font-style: italic;
+}
+
+ul li{
+    list-style: none;
+}
+
+

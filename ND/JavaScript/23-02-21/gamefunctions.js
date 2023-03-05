@@ -23,39 +23,40 @@ let rounds = 0;
 let roundTime = 0;
 let totalTime = 0;// for test.
 let playerPoints = 0;
-let npcPoints = 0;
+let npcPoints = 30 - playerPoints;
 let roundPointsOfPlayer = 0;
 let roundPointsOfNpc = 0;
 let click = false;
 
 
- let game = setInterval(() => {
-    
+
+let game = setInterval(() => {
+
     roundTime++;
-    
-   //document.querySelector('.screen').innerHTML = `<span style="text-align: center; padding-top: 10px; z-index: 0;position: relative;">Laikas: ${roundTime}s</span>`
+
+    //document.querySelector('.screen').innerHTML = `<span style="text-align: center; padding-top: 10px; z-index: 0;position: relative;">Laikas: ${roundTime}s</span>`
     npc.style.backgroundColor = color[rand(0, color.length - 1)];
     npc.style.top = rand(0, heigth - npcHeigth) + "px";
     npc.style.left = rand(0, width - 100) + "px";
 
 
-    if(rounds >= 10){
+    if (rounds >= 4) {
         console.log("zaidimas baigtas")
         document.querySelector('.screen').innerHTML = `<div onclick="start()"><h4>Laikas baigėsi!</h4></div>`;
 
         clearInterval(game);
 
-       
+
     }
 
     // round ends.
-    if (roundTime >= 30) {
+    if (roundTime >= 3) {
         document.querySelector('.result-table').innerHTML += `<span>${rounds}</span>`;
         document.querySelector('.result-table').innerHTML += `<span>${playerPoints}</span>`;
-        document.querySelector('.result-table').innerHTML += `<span>${30 - playerPoints}</span>`+ `<br>`;
+        document.querySelector('.result-table').innerHTML += `<span>${30 - playerPoints}</span>` + `<br>`;
 
         //test
-        if(roundTime === 30){
+        if (roundTime === 3) {
             totalTime++;
         }
 
@@ -67,16 +68,16 @@ let click = false;
     }
 
 
-    
 
 
 
-     
+
+
 
 }, 1000);
 
 
-
+taskai = [];
 
 
 
@@ -85,10 +86,6 @@ npc.addEventListener('click', () => {
     click = true;
     playerPoints++;
     roundPointsOfPlayer++;
-    if(click)return;
-   
-})
+    if (click) return;
 
-function start(){
- 
-};
+})
